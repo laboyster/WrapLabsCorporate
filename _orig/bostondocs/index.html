@@ -1,0 +1,942 @@
+<!doctype html>
+<!--[if IE 6 ]>
+<html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>Boston - Responsive HTML5/CSS Template</title>
+
+  <meta name="description" content="Thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to email via the user page contact form on this page. http://themeforest.net/user/createit-pl Thanks so much!">
+  <meta name="author" content="createIT">
+  <meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+
+
+  <link type="text/css" rel="stylesheet" href="syntaxh/css/shCoreDefault.css">
+  <link rel="stylesheet" href="css/documenter_style.css" media="all">
+
+
+  <script src="js/jquery.1.6.4.js"></script>
+
+  <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+  <script src="js/jquery.easing.js"></script>
+
+
+  <script>document.createElement('section');
+  var duration = 500, easing = 'swing';</script>
+  <script src="js/script.js"></script>
+
+
+  <style>
+    html{ background-color: #FFFFFF; color: #383838; }
+    ::-moz-selection{ background: #444444; color: #DDDDDD; }
+    ::selection{ background: #444444; color: #DDDDDD; }
+    #documenter_sidebar #documenter_logo{ background-image: url(); }
+    a{ color: #0000FF; }
+    hr{ border-top: 1px solid #EBEBEB; border-bottom: 1px solid #FFFFFF; }
+    #documenter_sidebar, #documenter_sidebar ol a{ background-color: #DDDDDD; color: #222222; }
+    #documenter_sidebar ol a{ -webkit-text-shadow: 1px 1px 0px #EEEEEE; -moz-text-shadow: 1px 1px 0px #EEEEEE; text-shadow: 1px 1px 0px #EEEEEE; }
+    #documenter_sidebar ol{ border-top: 1px solid #AAAAAA; }
+    #documenter_sidebar ol a{ border-top: 1px solid #EEEEEE; border-bottom: 1px solid #AAAAAA; color: #444444; }
+    #documenter_sidebar ol a:hover{ background: #444444; color: #DDDDDD; border-top: 1px solid #444444; }
+    #documenter_sidebar ol a.current{ background: #444444; color: #DDDDDD; border-top: 1px solid #444444; }
+    #documenter_copyright{ display: block !important; visibility: visible !important; }
+  </style>
+
+  <style>
+    .clear{
+      clear: both;
+      height: 0;
+      overflow: hidden;
+    }
+    img{
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, .4);
+    }
+    .rows2 {max-width:600px;}
+    .rows2 li {display: inline-block; min-height: 100px; vertical-align: top;}
+  </style>
+
+</head>
+<body>
+<div id="documenter_sidebar">
+  <a href="#documenter_cover" id="documenter_logo"></a>
+  <ol id="documenter_nav">
+    <li><a class="current" href="#documenter_cover">Start</a></li>
+    <li><a href="#html_structure">HTML Structure</a></li>
+    <li><a href="#css_files_structure">CSS Files & Structure</a></li>
+    <li><a href="#java_script">Java Script</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#forms">Contact</a></li>
+    <li><a href="#sources_credits">Sources & Credits</a></li>
+
+  </ol>
+  <div id="documenter_copyright">Copyright createIT<br>
+    made with the <a href="http://rxa.li/documenter">Documenter v1.6</a>
+  </div>
+</div>
+<div id="documenter_content">
+<section id="documenter_cover"><h1>Boston</h1>
+
+  <h2>Responsive Ghost Template</h2>
+  <hr>
+  <ul>
+    <li>Created: 01/01/2014</li>
+    <li>latest Update: 01/01/2014</li>
+    <li>By: createIT</li>
+    <li><a href="http://themeforest.net/user/createit-pl/portfolio">http://themeforest.net/user/createit-pl/portfolio</a></li>
+    <li>Email: <a href="mailto:support@createit.pl">support@createit.pl</a>
+    </li>
+  </ul>
+  <p>Thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to email via the user page contact form on this page.
+    <a href="http://themeforest.net/user/createit-pl">http://themeforest.net/user/createit-pl</a> Thanks so much!</p>
+
+
+</section>
+<section id="html_structure">
+
+
+<h2 id="structure" class="section-title">HTML Structure</h2>
+
+
+<p>
+  This theme is built upon bootstrap framework and is fully responsive. It adapts to window resolution and looks good on all devices including iPad and iPhone.<br>
+  See for yourself (resize your browser).</p>
+
+<div style="padding:20px; width:350px; background:#ddd; text-align:center; ">
+  If you would like to read more <br>about bootstrap framework click here :<br><br>
+  <a href="http://getbootstrap.com/css/" style="font-size:16px; font-weight:bold; color:#000;">Bootstrap Documentation</a>
+</div>
+
+<div class="subChapter">
+
+<h5>Main Menu structure</h5>
+
+<p>
+  Just change brand name, upload your logo to images/content/ folder and you're ready to go!
+</p>
+
+ <pre class="brush: html">
+    <!-- Begin Navigation -->
+    <!-- IF YOU WANT TO HAVE THE MENU FIXED ON TOP JUST HAD THE CLASS "navbar-fixed-top" -->
+    <!-- IF YOU WANT TO REMOVE THE RED BACKGROUND BEHIND THE LOGO JUST HAD THE CLASS "remove-left-red" -->
+    <!-- There are three types of menus. Change class "navbar-default" to "nabvar-inverse" or "navbar-color" -->
+    <nav id="navigation" class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            {{! Change your logo or name here }}
+            <a class="navbar-brand" href="#"><strong>Bos</strong>ton</a>
+        </div>
+        <div class="triangle visible-md visible-lg"></div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Blog</a></li>
+                <li><a href="/about-us/">About Us</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- End Navigation -->
+
+ </pre>
+
+<p>
+  There are 3 types of menu: dark, white and colored respectively. To apply any of these you need to change the navigation class.
+</p>
+
+<ul>
+  <li><strong>dark menu:</strong>
+    <pre class="brush: html">
+        &lt;nav id="navigation" class="navbar navbar-default" role="navigation">
+    </pre>
+  </li>
+  <li><strong>white menu:</strong>
+    <pre class="brush: html">
+        &lt;nav id="navigation" class="navbar navbar-inverse" role="navigation">
+    </pre>
+  </li>
+  <li><strong>colored menu:</strong>
+    <pre class="brush: html">
+        &lt;nav id="navigation" class="navbar navbar-color" role="navigation">
+    </pre>
+  </li>
+</ul>
+
+<p>
+    Some menus have by default a colored section. To remove it just had a <strong>class</strong> <i>remove-left-red</i> like this:
+</p>
+<pre class="brush: html">
+    &lt;nav id="navigation" class="navbar navbar-color remove-left-red" role="navigation">
+</pre>
+
+<h5>Grid System and Single row structure</h5>
+
+<p>The default Bootstrap grid system utilizes 12 columns. It's responsive grid and adapts to viewport. Below 767px viewports, the columns become fluid and stack vertically. The fluid grid system uses percents instead of
+  pixels for column widths. Each row always include 12 columns (for example col-md-8 + col-md-4 = col-md-12).<br>
+  Bootstrap documentation: <a href="http://getbootstrap.com/css/#grid">here</a><br><br>
+  Basic grid HTML:</p>
+
+
+<pre class="brush: html">
+
+  &lt;div class="row">
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+    &lt;div class="col-md-1">.col-md-1&lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="col-md-8">.col-md-8&lt;/div>
+    &lt;div class="col-md-4">.col-md-4&lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="col-md-4">.col-md-4&lt;/div>
+    &lt;div class="col-md-4">.col-md-4&lt;/div>
+    &lt;div class="col-md-4">.col-md-4&lt;/div>
+  &lt;/div>
+  &lt;div class="row">
+    &lt;div class="col-md-6">.col-md-6&lt;/div>
+    &lt;div class="col-md-6">.col-md-6&lt;/div>
+  &lt;/div>
+
+</pre>
+
+<p>We use helper classes to add padding to the top and bottom of the divs. You can use the following classes to change the padding between your content:</p>
+<ul>
+    <li>padding-big</li>
+    <li>padding-medium</li>
+    <li>padding-small</li>
+    <li>padding-top-big</li>
+    <li>padding-top-medium</li>
+    <li>padding-top-small</li>
+    <li>padding-bottom-big</li>
+    <li>padding-bottom-medium</li>
+    <li>padding-bottom-small</li>
+</ul>
+
+<h5>Parallax Section</h5>
+
+
+<p>These sections are parts of the page with separate backgrounds,<br>
+To change the image you just need to change the style URL</p>
+
+<ul>
+  <li><i>style="background-image: url('images/content/parallax2.jpg')</i> - path to background image, best resolution is 1920px x 1200px</li>
+</ul>
+
+ <pre class="brush: html">
+    &lt;div id="Parallax2" class="parallax padding-big" style="background-image: url('images/content/parallax2.jpg')">
+        &lt;div class="container">
+
+            [section content]
+
+        &lt;/div>
+    &lt;/div>
+ </pre>
+
+<h5 id="Colors">Colors</h5>
+
+<p>The theme includes 6 different colors. <br>
+  To activate certain colors just add the proper css file.<br>
+  For example: </p>
+
+  <pre class="brush: html">
+    &lt;head>
+    (..)
+    &lt;link rel="stylesheet" type="text/css" href="css/orange.css">
+    (..)
+    &lt;/head>
+  </pre>
+
+<h5>Avaiblable Colors</h5>
+
+<ol>
+  <li>Red (default)</li>
+  <li>Orange</li>
+  <li>Yellos</li>
+  <li>Green</li>
+  <li>Cyan</li>
+  <li>Blue</li>
+</ol>
+
+<br><br>
+
+<h2>Components</h2>
+
+
+<br><br>
+<h5>Special Headers</h5>
+
+<p>
+  You can change the type of header you want to use by changing code in index.hbs file
+</p>
+
+<h6>Parallax Header </h6>
+
+  <pre class="brush:html">
+    {{!< default}}
+
+    {{!> header}}
+
+    {{! To enable video, remove !below. To edit video template navigate to partials/header-video.hbs}}
+    {{!> header-video}}
+
+    {{! To enable slider, remove !below. To edit slider template navigate to partials/header-slider.hbs}}
+    {{!> header-slider}}
+
+    {{! To enable second version of slider, remove !below. To edit slider template navigate to partials/header-slider2.hbs}}
+    {{> header-slider2}}
+
+    {{! To enable slogan, remove !below. To edit slider template navigate to partials/header-slogan.hbs}}
+    {{!> header-slogan}}
+
+
+    {{> menu}}
+    <div id="blog" class="container blog padding-bottom-medium">
+        <div class="col-sm-12">
+            {{! Prints post list here }}
+
+            {{#foreach posts}}
+            {{> post-preview}}
+            {{/foreach}}
+
+            {{! Pagination }}
+            {{#if pagination}}
+            {{{pagination}}}
+            {{/if}}
+
+        </div>
+    </div>
+  </pre>
+
+
+<h6>Fullscreen Slider - V1 </h6>
+
+<pre class="brush:html">
+    &lt;header id="MainHeader" class="main-header-with-slider chapter">
+        &lt;div class="fullscreen-flexslider">
+            &lt;ul class="slides">
+                &lt;li>
+                    &lt;img src="images/content/full-slider1.jpg" alt="preview">
+                    &lt;div class="caption text-center">
+                        <&lt;span>&lt;strong>SUPERB&lt;/strong> DESIGN&lt;/span>
+                    &lt;/div>
+                &lt;/li>
+                (...)
+            &lt;/ul>
+            &lt;ul class="flex-control-nav">
+                &lt;li>&lt;a href="#">&lt;div class="circle-outside">&lt;div class="circle"><&lt;/div>&lt;/div>&lt;/a>&lt;/li>
+                (...)
+            &lt;/ul>
+        &lt;/div>
+    &lt;/header>
+</pre>
+
+<h6>Fullscreen Slider - V2 </h6>
+
+<pre class="brush:html">
+    &lt;header id="MainHeader" class="main-header-with-slider chapter">
+        &lt;div class="social-top-fix">
+            &lt;div class="container text-center">
+                &lt;div class="social">
+                    &lt;ul>
+                        &lt;li>
+                            &lt;a href="#">
+                                &lt;div class="circle-btn" data-toggle="tooltip" data-placement="bottom"
+                                     title="Facebook">
+                                    &lt;p>&lt;i class="fa fa-facebook">&lt;/i>&lt;/p>
+                                &lt;/div>
+                            &lt;/a>
+                        &lt;/li>
+                        (...)
+                    &lt;/ul>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="fullscreen-flexslider fs-with-menu-bottom">
+            &lt;ul class="slides">
+                &lt;li>
+                    &lt;img src="images/content/full-slider4.jpg" alt="preview">
+                    &lt;div class="caption text-center">
+                        &lt;span>Harmony of Details&lt;/span>
+                    &lt;/div>
+                &lt;/li>
+                (...)
+            &lt;/ul>
+            &lt;ul class="flex-control-nav">
+                &lt;li>&lt;a href="#">&lt;div class="circle-outside">&lt;div class="circle">&lt;/div>&lt;/div>&lt;/a>&lt;/li>
+                (...)
+            &lt;/ul>
+        &lt;/div>
+    &lt;/header>
+</pre>
+
+<h6>Fullscreen Video</h6>
+
+<pre class="brush:html">
+    <header id="MainHeader" class="main-header-with-video chapter">
+        <div id="player" class="video">
+            <iframe src="//player.vimeo.com/video/40123818?title=0&amp;portrait=0&amp;color=df5840&amp;autoplay=1&amp;loop=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="flexslider-with-video">
+            <ul class="slides">
+                <li>
+                    <div class="caption text-center">
+                        <span>Outstanding User Experience</span>
+                    </div>
+                </li>
+                (...)
+            </ul>
+            <ul class="flex-control-nav">
+                <li><a href="#"><div class="circle-outside"><div class="circle"></div></div></a></li>
+                (...)
+            </ul>
+        </div>
+    </header>
+</pre>
+
+<h6>Fullscreen Slogan</h6>
+
+<pre class="brush:html">
+    <header id="MainHeader" class="main-header main-header-with-slogan chapter">
+        <div class="slogan">
+            <div class="container">
+                <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 text-center">
+                    <p class="h2">
+                        TRUST US</br>
+                    </p>
+                    <p class="h1 square">
+                        <strong>WE ARE</strong></br>
+                    </p>
+                    <p class="h3">
+                        DESIGNERS
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="fullscreen-slider-slogan fs-with-menu-bottom">
+            <ul class="slides">
+                <li>
+                    <img src="images/content/full-slider7.jpg" alt="preview">
+                </li>
+                (...)
+            </ul>
+        </div>
+    </header>
+</pre>
+
+
+<br><br>
+<h5>Social Icons</h5>
+
+<p>You can use any icon available in <a href="http://www.fontawesome.io/">Font Awesome</a> inside the social element</p>
+
+
+<p>HTML Markup:</p>
+
+<pre class="brush:html">
+<div class="social">
+    <ul>
+        <li>
+            <a href="#">
+                <div class="circle-btn" data-toggle="tooltip" data-placement="bottom"
+                     title="Facebook">
+                    <!-- Change icon here -->
+                    <p><i class="fa fa-facebook"></i></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="circle-btn" data-toggle="tooltip" data-placement="bottom"
+                     title="Twitter">
+                    <!-- Change icon here -->
+                    <p><i class="fa fa-twitter"></i></p>
+                </div>
+            </a>
+        </li>
+        (...)
+    </ul>
+</div>
+</pre>
+
+
+<br><br>
+<h5>Circle Icons</h5>
+
+<p>This is simple HTML and CSS to create beautiful circle thumbnails<br>
+  HTML Markup:
+</p>
+
+
+<pre class="brush:html">
+  <div class="col-md-4 col-sm-4">
+      <div class="circleBox">
+          <div class="circle-border-outside">
+              <div class="circle-border-inside">
+                  <div class="circle">
+                      <div class="circle-content">
+                          <!-- Change icon here -->
+                          <span><embed src="images/content/diamond.svg" type="image/svg+xml"></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="circle-triangle"></div>
+          </div>
+      </div>
+      <!-- Your description -->
+      <h4><strong>Priceless UX</strong></h4>
+
+      <p>Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien
+          ultricies dolor, et mollis pede.</p>
+  </div>
+</pre>
+
+<h5>Buttons</h5>
+
+<p>
+  Here are the example of buttons you can use:
+</p>
+
+<pre class="brush: html">
+
+    <!-- Normal colors -->
+    <a href="#" class="btn btn-lg">Read More</a>
+    <button type="submit" class="btn btn-lg">Sign Up</button>
+
+    <!-- Inverted colors -->
+    <a href="#" class="btn btn-white btn-lg">Read More</a>
+    <button type="submit" class="btn btn-white btn-lg">Sign Up</button>
+
+</pre>
+
+
+<section id="css_files_structure">
+  <h3>CSS Files & Structure</h3>
+  <hr class="notop">
+  <p>We've included style.css file, which contains default styles. To enable each flavour you have to add second css file (more details <a href="#flavours">here</a>)</p>
+
+  <div class="subChapter">
+
+    <ol>
+      <li>Bootstrap CSS Framework v.3</li>
+      <li>Font Face</li>
+      <li>General Styles
+        <ul style="margin:0;">
+            <li>typography</li>
+            <li>MainHeader</li>
+            <li>navigation</li>
+            <li>buttons</li>
+            <li>sections
+                <ul>
+                    <li>aboutus</li>
+                    <li>footer</li>
+                </ul>
+            </li>
+
+            <li>Elements
+                <ul>
+                    <li>contact form</li>
+                    <li>social icons</li>
+                    <li>circle images</li>
+                    <li>gmaps3</li>
+                    <li>flexslider</li>
+                </ul>
+            </li>
+            <li>media queries, adjustments
+                <ul style="margin:0;">
+                    <li>@media (min-width: 990px) {}</li>
+                    <li>@media (min-width: 990px) and (max-width: 1280px) {}</li>
+                    <li>@media (max-width: 990px) {}</li>
+                    <li>@media (min-width: 767px) and (max-width: 990px) {}</li>
+                    <li>@media (max-width: 767px) {}</li>
+                    <li>@media (max-width: 480px) {}</li>
+                </ul>
+            </li>
+        </ul>
+      </li>
+    </ol>
+
+
+    If you want to modify or add new styles please find this lines in <strong>style.css</strong> :
+    <br><br>
+
+    <pre class="brush: html">
+    /* *************** */
+    /*  GENERAL STYLES */
+    /* *************** */
+    /* START EDIT HERE */
+    </pre>
+    <br>
+    Below you can add your code.<br><br>
+
+    <p>Main /css/style.css includes red color styles<br>
+
+
+  </div>
+</section>
+
+
+<section id="java_script">
+<h3>Javascript</h3>
+<hr class="notop">
+
+
+<p>All javascripts are placed in folder /js. In main.js file we implement all functions calls.<br>
+  This theme uses following Javascript files:</p>
+
+<ol>
+    <li>Bootstrap v 3 framework (powerful front-end framework for faster and easier web development)</li>
+    <li>jQuery v1.10.2 (A fast javascript library that Foodtruckifies how to traverse HTML documents, handle events, perform animations.)</li>
+    <li>jQuery FlexSlider v2.2.0</li>
+    <li>GMAP3 Plugin for JQuery v. 5.1.1</li>
+    <li>jQuery.appear</li>
+    <li>FitVids 1.0.3</li>
+    <li>jQuery Parallax 1.1.3</li>
+    <li>Sticky Plugin v1.0.0</li>
+    <li>Modernizr 2.0.6</li>
+</ol>
+
+
+<div class="subChapter">
+
+<h3>Google Map (GMAP3 Plugin)</h3>
+
+ <p>This is google map with custom marker, you can define couple parameters: </p>
+ <ul>
+   <li><strong>data-location</strong> - address to show</li>
+   <li><strong>data-text</strong> - text in bubble overlay</li>
+   <li><strong>data-height</strong> - map height (if undefined height will be 220px)</li>
+   <li><strong>data-offset</strong> - by how many map should be repositioned from marker center point (default -30)</li>
+ </ul>
+
+ <p>It uses gmap3 plugin. <br>
+   Documentation: <a href="http://gmap3.net/">here</a><br>
+   HTML Markup:
+ </p>
+
+ <pre class="brush: html">
+   &lt;div class="googleMap" data-location="Junipers Blvd. 380 Queens, NY 11379, USA" data-text="Junipers Blvd. 380 Queens, NY 11379, USA" data-height="480" data-offset="-80">&lt;/div>
+ </pre>
+
+ <p>All javascript code can be found in js/main.js file:</p>
+
+ <pre class="brush: javascript">
+   function initmap() {
+
+   	jQuery(".googleMap").each(function () {
+   		var atcenter = "";
+   		var $this = jQuery(this);
+   		var location = $this.data("location");
+   		var text = $this.data("text");
+
+   		var offset = -30;
+
+   		if (validateDataAttr($this.data("offset"))) {
+   			offset = $this.data("offset");
+   		}
+
+   		if (validateDataAttr(location)) {
+   (..)
+   }
+ </pre>
+
+<br><br>
+
+ <h3>Slider (flexslider)</h3>
+
+ <p>It is fullwidth slider of any content. We use flexsldier plugin. Just paste your content into li tags.<br>
+   Documentation: <a href="http://www.woothemes.com/flexslider/">http://www.woothemes.com/flexslider/</a><br>
+   HTML Markup:
+ </p>
+
+
+  <pre class="brush:html">
+
+
+    &lt;!-- ************************* -->
+    &lt;!-- ** FULL PRODUCT SLIDER ** -->
+    &lt;div class="flexFull flexslider loading-slider text-center">
+      &lt;ul class="slides">
+        &lt;li>
+          &lt;div class="container">
+            &lt;img src="images/content/sliderphoto-1.png" alt=" ">
+            [any content]
+          &lt;/div>
+        &lt;/li>
+        &lt;li>
+          &lt;div class="container">
+            &lt;img src="images/content/sliderphoto-1.png" alt=" ">
+            [any content]
+          &lt;/div>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div>
+    &lt;!-- / flexslider -->
+ </pre>
+
+ <p>And js initialization (js/main.js file),<br>
+   there you can change slider parameters :</p>
+
+ <pre class="brush:javascript">
+   jQuery(window).load(function () {
+
+   	// flexfull slider init
+   	jQuery('.flexslider.flexFull').flexslider({
+   		animation: "slide",              //String: Select your animation type, "fade" or "slide"
+   		easing: "easeInOutExpo",               //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
+   		// easing types :
+   		// swing, easeInQuad, easeOutQuad, easeInOutQuad, easeInCubic, easeOutCubic,
+   		// easeInOutCubic, easeInQuart, easeOutQuart, easeInOutQuart, easeInQuint,
+   		// easeOutQuint, easeInOutQuint, easeInSine, easeOutSine, easeInOutSine,
+   		// easeInExpo, easeOutExpo, easeInOutExpo, easeInCirc, easeOutCirc,
+   		// easeInOutCirc, easeInElastic, easeOutElastic, easeInOutElastic, easeInBack,
+   		// easeOutBack, easeInOutBack, easeInBounce, easeOutBounce, easeInOutBounce
+   		direction: "horizontal",        //String: Select the sliding direction, "horizontal" or "vertical"
+   		reverse: false,                 //{NEW} Boolean: Reverse the animation direction
+   		animationLoop: true,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+   		smoothHeight: false,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
+   		startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+   		slideshow: false,                //Boolean: Animate slider automatically
+   		slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+   		animationSpeed: 1100,            //Integer: Set the speed of animations, in milliseconds
+   		initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
+   		randomize: false,               //Boolean: Randomize slide order
+
+   		// Primary Controls
+   		controlNav: false,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+   		directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
+   		prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+   		nextText: "Next",               //String: Set the text for the "next" directionNav item
+
+   		// Usability features
+   		pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+   		pauseOnHover: true,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+   		touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
+   		video: true,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
+   		useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
+
+   		// Secondary Navigation
+   		keyboard: true,                 //Boolean: Allow slider navigating via keyboard left/right keys
+   		multipleKeyboard: false,        //{NEW} Boolean: Allow keyboard navigation to affect multiple sliders. Default behavior cuts out keyboard navigation with more than one slider present.
+   		mousewheel: false,              //{UPDATED} Boolean: Requires jquery.mousewheel.js (https://github.com/brandonaaron/jquery-mousewheel) - Allows slider navigating via mousewheel
+   		pausePlay: false,               //Boolean: Create pause/play dynamic element
+   		pauseText: 'Pause',             //String: Set the text for the "pause" pausePlay item
+   		playText: 'Play',               //String: Set the text for the "play" pausePlay item
+
+   		// Callback API
+   		start: function () {
+   			jQuery(".flexslider.flexFull").removeClass("loading-slider");
+   		},
+   		before: function () {
+   		},           //Callback: function(slider) - Fires asynchronously with each slider animation
+   		after: function () {
+   		},            //Callback: function(slider) - Fires after each slider animation completes
+   		end: function () {
+   		},              //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
+   		added: function () {
+   		},            //{NEW} Callback: function(slider) - Fires after a slide is added
+   		removed: function () {
+   		}           //{NEW} Callback: function(slider) - Fires after a slide is removed
+   	});
+   })
+ </pre>
+
+<h3>Animate Plugin</h3>
+
+<p>This allows any div to be animated.</p>
+
+
+<p>
+    Documentation: <a href="https://daneden.me/animate/">here</a><br>
+    HTML Markup:
+</p>
+
+ <pre class="brush: html">
+
+    <!-- class iniAnimate needs to be added to the body-->
+   <body class="initAnimate" data-spy="scroll">
+
+   <!-- You can add class animated to any div and define the type of animation with data-fx -->
+       <div class="row padding-top-small animated" data-fx="fadeInUp">
+           <div class="col-md-4 col-sm-4">
+               <div class="circleBox">
+                   <div class="circle-border-outside">
+                       <div class="circle-border-inside">
+                           <div class="circle">
+                               <div class="circle-content">
+                                   <span><embed src="images/content/diamond.svg" type="image/svg+xml"></span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="circle-triangle"></div>
+                   </div>
+               </div>
+               <h4><strong>Priceless UX</strong></h4>
+
+               <p>Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien
+                   ultricies dolor, et mollis pede.</p>
+           </div>
+        </div>
+   </body>
+ </pre>
+</div>
+<!-- / subChapter -->
+
+</section>
+<section id="typography">
+  <h3>Typography</h3>
+  <hr class="notop">
+
+  <p>
+    We use google font service to include fonts or font face sets.
+
+    <strong>Font used:</strong> Titillium Web
+  </p>
+
+
+  <p>Credits:<br>
+  <a href="http://www.google.com/fonts/specimen/Titillium+Web">Titillium Web Font</a><br>
+  </p>
+
+
+</section>
+<section id="forms"><h3>Contact Form</h3>
+  <hr class="notop">
+
+  <p>Template comes with ready to use: <br>
+    <ul>
+      <li>Contact Form</li>
+      <li>Newsletter Form</li>
+    </ul>
+
+  <p>
+    All needed files are in /form directory.<br>
+    Remember to include &lt;script src="form/js/form.js">&lt;/script> on page.<br>
+    To <strong>configure</strong> form just edit form/form.php and change e-mails to your own :
+  </p>
+
+  <pre class="brush: html">
+    $to = "mail@example.com";
+    $from = "mail@example.com";
+  </pre>
+
+   <p>
+       Please note that by default NodeJS doesn't handle PHP which is required for sending email messages. In order to make it work, you need to copy "form" directory to any domain/server where PHP is supported.
+       Once copied, just change in the markup below "URL WHERE PHP WILL WORK" to this domain.
+   </p>
+  <p>That's it!</p>
+
+
+  <h5>Contact Form</h5>
+
+  <p>HTML Markup:</p>
+
+  <pre class="brush: html">
+
+    <div class="contactForm">
+        <div class="row">
+            <div class="successMessage alert alert-success" style="display: none">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <p>Thank You! We will contact you shortly.</p>
+            </div>
+            <div class="errorMessage alert alert-error" style="display: none">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <p>Ups! An error occured. Please try again later.</p>
+            </div>
+        </div>
+
+        <form role="form" action="http://URL WHERE PHP WILL WORK/form/send.php" method="post" class="contactForm validateIt" data-email-subject="Contact Form" data-show-errors="true">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <input required type="text" name="field[]" class="form-control input-lg" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input required type="email" name="field[]" class="form-control input-lg" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input required type="tel" name="field[]" class="form-control input-lg" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <textarea class="form-control input-lg" rows="4" name="field[]" required
+                                  placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg btn-block">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- / contactForm -->
+  </pre>
+
+  <p><strong>How to add more fields to form ?</strong></p>
+  <p>Just add another form-group section,<br>
+    for example additional phone and fax : </p>
+
+  <pre class="brush: html">
+    &lt;div class="form-group">
+      &lt;label>Your Phone&lt;/label>
+      &lt;input type="text" class="form-control" name="field_[]" placeholder="enter your phone">
+    &lt;/div>
+    &lt;div class="form-group">
+      &lt;label>Your Fax&lt;/label>
+      &lt;input type="text" class="form-control" name="field_[]" placeholder="enter your fax">
+    &lt;/div>
+    </pre>
+</section>
+<section id="sources_credits">
+  <h3>Sources & Credits</h3>
+  <hr class="notop">
+
+  <p>The following sources and files have been used to build up this theme</p>
+
+  <ul>
+    <li>Twitter Bootstrap - <a href="http://getbootstrap.com/">http://twitter.github.com/bootstrap/</a></li>
+    <li>jQuery - <a href="http://www.jquery.com">http://www.jquery.com</a></li>
+  </ul>
+  <br><br>
+
+  <p>
+    Once again, thank you so much for purchasing this theme.
+    If you have any questions, feel free to email me via my user page <a href="http://themeforest.net/user/createit-pl">contact form</a>.
+
+  </p>
+
+</section>
+
+
+</div>
+
+<script type="text/javascript" src="syntaxh/js/shCore.js"></script>
+<script type="text/javascript" src="syntaxh/js/shBrushJScript.js"></script>
+<script type="text/javascript" src="syntaxh/js/shBrushCss.js"></script>
+<script type="text/javascript" src="syntaxh/js/shBrushXml.js"></script>
+
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{{!< default}}
+
+{{> header}}
+
+{{! To enable video, remove !below. To edit video template navigate to partials/header-video.hbs}}
+{{!> header-video}}
+
+{{! To enable slider, remove !below. To edit slider template navigate to partials/header-slider.hbs}}
+{{!> header-slider}}
+
+{{! To enable second version of slider, remove !below. To edit slider template navigate to partials/header-slider2.hbs}}
+{{!> header-slider2}}
+
+{{! To enable slogan, remove !below. To edit slider template navigate to partials/header-slogan.hbs}}
+{{!> header-slogan}}
+
+
+{{> menu}}
+<div id="blog" class="container blog padding-bottom-medium">
+    <div class="col-sm-12">
+            {{! Prints post list here }}
+
+            {{#foreach posts}}
+                {{> post-preview}}
+            {{/foreach}}
+
+            {{! Pagination }}
+            {{#if pagination}}
+                {{{pagination}}}
+            {{/if}}
+
+    </div>
+</div>
